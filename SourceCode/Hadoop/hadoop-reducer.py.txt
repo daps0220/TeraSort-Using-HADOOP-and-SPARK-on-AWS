@@ -1,0 +1,17 @@
+
+import sys
+
+inputFile = sys.stdin
+outputFIle = sys.stdout
+
+fp = open(outputFile)
+
+
+# input comes from STDIN
+for each_line in inputFile:
+
+    key, value = each_line.split("\t") // split into key value pair from hadoop-mapper.py 's output
+    
+    fp.write(sorted(key) + value) // write sorted out as key+value as string into output file 
+
+fp.close() // close output file

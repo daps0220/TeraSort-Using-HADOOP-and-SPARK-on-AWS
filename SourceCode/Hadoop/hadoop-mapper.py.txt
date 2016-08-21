@@ -1,0 +1,18 @@
+#!python program of Mapper class
+
+import sys
+
+# input comes from STDIN (standard input)
+
+inputFile = sys.stdin # input file path from given hdfs 
+
+for each_line in inputFile:
+   
+    eachLineList= each_line.split("\n")#put line of 100 bytes into List
+    
+    for dict in eachLineList:
+        return (dict[:10], dict[10:])// return 1st 10 bytes as Key and remainig bytes as values							remaining  bytes as value 
+
+
+
+
